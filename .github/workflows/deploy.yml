@@ -34,5 +34,5 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
         run: |
           aws ecs update-service --cluster flask-cluster-1545188 \
-            --service 1545188 \
+            --service flask-service-1545188 \
             --force-new-deployment --region $AWS_REGION
